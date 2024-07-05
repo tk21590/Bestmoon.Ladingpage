@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Box Phone Farm Bestmoon - Nhà Phân Phối</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="~/landing/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="~/landing/css/mdb.min.css" rel="stylesheet">
+  <link href="~/css/site.css" rel="stylesheet">
+  <style>
+    html,
+    body,
+    header,
+    .intro-2 {
+      height: 100%;
+    }
+
+    @@media (max-width: 740px) {
+
+      html,
+      body,
+      header,
+      .intro-2 {
+        height: 900px;
+      }
+    }
+
+    @@media (min-width: 800px) and (max-width: 850px) {
+
+      html,
+      body,
+      header,
+      .intro-2 {
+        height: 900px;
+      }
+    }
+
+  </style>
+</head>
+
+<body class="main-page">
+
+    @RenderBody()
+    <!-- JQuery -->
+  <script type="text/javascript" src="~/landing/js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="~/landing/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="~/landing/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="~/landing/js/mdb.min.js"></script>
+
+    <script type="text/javascript" src="~/js/site.js"></script>
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+@*     @await Component.InvokeAsync("Notyf")
+ *@    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

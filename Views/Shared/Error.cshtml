@@ -1,0 +1,54 @@
+﻿
+@{
+    Layout = "_Layout_Error";
+}
+<!-- Intro Section -->
+<section class="view intro-2" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/architecture.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <div class="mask rgba-gradient-1">
+        <div class="container h-100 d-flex justify-content-center align-items-center">
+            <div class="row">
+                <div class="col-md-12 wow fadeIn mb-3">
+                    <div class="card card-body rgba-white-slight text-center white-text">
+                        <ul class="list-unstyled py-5 mx-lg-5">
+                            <li>
+                                <h1 class="display-1 mt-5 mx-5 mt-lg-0 mb-5 font-weight-bold white-text wow fadeIn"
+                                    data-wow-delay="0.3s">
+                                    <strong>Error ! @ViewBag.ErrorCode </strong>
+                                </h1>
+                            </li>
+                            <li>
+                                <h4 class="white-text description mb-4 wow fadeIn" data-wow-delay="0.4s">
+                                    @ViewBag.ErrorMessage
+                                </h4>
+                                <p class="white-text description pb-5 wow fadeIn" data-wow-delay="0.4s">
+                                    Bấm vào
+                                    <a asp-controller="home" asp-action="index" class="font-weight-bold">đây</a>.
+                                    để quay trở lại trang chủ
+
+                                </p>
+
+                                <!-- Facebook -->
+                                <a class="p-2 m-2 fa-lg fb-ic">
+                                    <i class="fab fa-facebook-f white-text"> </i>
+                                </a>
+                                <!-- Twitter -->
+                                <a class="p-2 m-2 fa-lg tw-ic">
+                                    <i class="fab fa-twitter white-text"> </i>
+                                </a>
+                                <!-- Google + -->
+                                <a class="p-2 m-2 fa-lg gplus-ic">
+                                    <i class="fab fa-google-plus-g white-text"> </i>
+                                </a>
+                                <!-- Linkedin -->
+                                <a class="p-2 m-2 fa-lg li-ic">
+                                    <i class="fab fa-linkedin-in white-text"> </i>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
